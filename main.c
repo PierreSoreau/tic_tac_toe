@@ -25,13 +25,13 @@ int main(){
     int nb;
 
     printf("Choisissez où jouer:\n");
-
-    scanf("%d", &nb);
-
-    while (ajout_symbole_utilisateur(morpion,nb)!=1){
+    int ret=scanf("%d", &nb);  
+    int ok=0;    
+    
+    while (ajout_symbole_utilisateur(morpion,nb,ret)!=1){
         printf("Choisissez où jouer:\n");
 
-        scanf("%d", &nb);
+        ret=scanf("%d", &nb);
     }  
 
     affichage_grille(morpion);

@@ -3,7 +3,8 @@
 
 char** creation_grille();
 void affichage_grille(char** morpion);
-int ajout_symbole_utilisateur(char** morpion, int nb);
+int check_nombre_entier(char**morpion,int nb);
+int ajout_symbole_utilisateur(char** morpion, int nb, int ret);
 int ajout_symbole_ordi(char** morpion, int random_number);
 int check_victoire(char**morpion);
 int check_defaite(char**morpion);

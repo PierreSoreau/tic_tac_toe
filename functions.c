@@ -41,8 +41,7 @@ void affichage_grille(char** morpion){
 
 //fonction qui permet à l'utilisateur d'ajouter un symbole X dans une case seulement si elle n'est pas pleine
 
-int ajout_symbole_utilisateur(char** morpion, int nb){
-    
+int ajout_symbole_utilisateur(char** morpion, int nb, int ret){ 
     
     
     if ((nb==0 && morpion[0][0]==' ') ){
@@ -89,6 +88,17 @@ int ajout_symbole_utilisateur(char** morpion, int nb){
     else if (nb==8 && morpion[2][2]==' '){
         morpion[2][2]='X';
         return 1;       
+    }
+    
+    else if (ret!= 1) {
+        printf("Vous n'avez pas rentré un nombre entier entre 0 et 8\n");
+        while (getchar() != '\n');         
+        return 0;
+    }
+
+    else if (nb < 0 || nb > 8) {
+        printf("Le nombre entier doit être compris entre 0 et 8\n");                
+        return 0;
     }
 
     else{
