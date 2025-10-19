@@ -25,8 +25,7 @@ int main(){
     int nb;
 
     printf("Choisissez où jouer:\n");
-    int ret=scanf("%d", &nb);  
-    int ok=0;    
+    int ret=scanf("%d", &nb);          
     
     while (ajout_symbole_utilisateur(morpion,nb,ret)!=1){
         printf("Choisissez où jouer:\n");
