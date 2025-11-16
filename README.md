@@ -26,7 +26,7 @@ docker run -it --rm --name jeu-c-container mon-jeu-c
 
 Ecrire la commande ci-dessous dans le terminal:
 
-./tic-tac-toe
+./exercice_tic_tac_toe
 
 
 ## Fonctionnalités
