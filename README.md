@@ -10,7 +10,7 @@ Langage C
 
 ## Fonctionnalités
 
-![gif du jeu](photo/photo/tic-tac-toe.gif)
+![gif du jeu](photo/tic-tac-toe.gif)
 
 
 
